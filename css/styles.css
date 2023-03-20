@@ -39,6 +39,8 @@ body {
     font-size: 16px;
 }
 
+/* Container  */
+
 .container {
     width: 100%;
     max-width: 1158px;
@@ -46,8 +48,23 @@ body {
     padding: 0 15px;
 }
 
+@media (max-width: 767px) {
+    .container {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+}
+
+/* Section */
+
 .section {
     padding-top: 120px;
+}
+
+@media (max-width: 1199px) {
+    .section {
+        padding: 96px 0;
+    }
 }
 
 .markers.list {
@@ -58,7 +75,7 @@ body {
     padding: 120px 0;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
     .section-do {
         display: none;
     }
@@ -536,9 +553,17 @@ body {
     gap: 24px;
 }
 
+/* Work list */
+
 .work-list {
     display: flex;
     gap: 24px;
+}
+
+@media (max-width: 767px) {
+    .work-list {
+        
+    }
 }
 
 .buttons {
