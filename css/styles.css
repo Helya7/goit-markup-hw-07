@@ -739,7 +739,7 @@ body {
     color: var(--color-firstlight);
 }
 
-input[type="mail"] {
+input[type="email"] {
     color: var(--priority-text-color);
 }
 
@@ -952,7 +952,7 @@ input[type="mail"] {
 }
 
 .policy-direction {
-    padding-top: 16px;
+    margin-top: 16px;
 }
 
 .modal-send-button {
