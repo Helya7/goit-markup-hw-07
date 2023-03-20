@@ -686,7 +686,7 @@ body {
 
 .container.footer-social-media {
     display: flex;
-    gap: 120px;
+    gap: 80px;
 }
 
 .footer-social-icon {
