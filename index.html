@@ -24,7 +24,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header-container">
+      <div class="container header-container-desktop">
         <nav class="header-nav">
           <a href="./index.html" class="site-title"
             ><span class="part-site-title">Web</span>Studio</a
@@ -40,19 +40,40 @@
           </ul>
         </nav>
         <address>
-          <ul class="address">
-            <li class="markers">
-              <a class="contact" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="markers">
-              <a class="contact" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
+          <div class="header-contact">
+            <ul class="address">
+              <li class="markers">
+                <a class="contact" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="markers">
+                <a class="contact" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </div>
         </address>
+      </div>
+      <div class="container header-container-mobil">
+        <nav class="header-nav">
+          <a href="./index.html" class="site-title"
+            ><span class="part-site-title">Web</span>Studio</a
+          >
+        </nav>
+        <button class="burger-menu js-open-menu" type="button">
+          <svg class="burger-menu-icon">
+            <use href="./images/icons.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobil-menu js-menu-container">
+        <button class="mobil-menu-close js-close-menu" type="button">
+          <svg class="mobil-menu-cross">
+            <use href="./images/icons.svg#icon-vector"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -64,6 +85,7 @@
           </button>
         </div>
       </section>
+
       <section class="section">
         <div class="container">
           <h2 class="title-h2 hidden">The quality of our work</h2>
@@ -379,7 +401,7 @@
         </div>
       </section>
     </main>
-    <footer class="section-footer">
+    <!-- <footer class="section-footer">
       <div class="container footer-social-media">
         <div>
           <a href="./index.html" class="site-title-footer"
@@ -442,7 +464,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -522,6 +544,7 @@
       </div>
     </div>
 
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
