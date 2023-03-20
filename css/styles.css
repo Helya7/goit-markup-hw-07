@@ -981,8 +981,8 @@ input[type="email"] {
     fill: var(--button-color);
 }
 
-/* 
-.button-subscribe {
+
+/* .button-subscribe {
     display: flex;
     background-color: var(--button-color);
     color: var(--priority-bgr-color);
@@ -1005,12 +1005,12 @@ input[type="email"] {
 
 .button-subscribe:hover {
     background-color: var(--color-active);
-}
+} */
 
 .footer-form-icon {
-    color: var(--priority-bgr-color);
     fill: currentColor;
-} */
+    color: var(--priority-bgr-color);
+}
 
 /* modal */
 
@@ -1380,8 +1380,8 @@ footer {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     background-color: transparent;
-    /* width: 264px; */
-    width: 398px;
+    width: 264px;
+    /* width: 398px; */
     height: 40px;
     padding: 8px 0px 8px 16px;
 
