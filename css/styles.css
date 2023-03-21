@@ -202,6 +202,7 @@ body {
     padding-top: 80px;
     padding-left: 40px;
     padding-bottom: 40px;
+    padding-right: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -257,6 +258,10 @@ body {
     text-transform: capitalize;
 }
 
+.header-link-burger-menu.active {
+    color: var(--color-active);
+}
+
 .list-link-burger-menu {
     margin-bottom: 40px;
 }
@@ -274,7 +279,7 @@ body {
 }
 
 .address-berger-menu {
-    margin-top: 284px;
+    margin-top: 30px;
 }
 
 .list-address-burger-menu {
@@ -419,8 +424,14 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 1440px;
-    padding: 188px 0;
+    padding: 112px 0;
     text-align: center;
+}
+
+@media (min-width: 1200px) {
+    .first-section {
+        padding: 188px 0;
+    }
 }
 
 .do-images {
@@ -438,12 +449,19 @@ body {
     max-width: 496px;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 48px;
+    margin-bottom: 72px;
 }
 
 @media (min-width: 768px) {
     .title {
         font-size: 56px;
+        margin-bottom: 36px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .title {
+        margin-bottom: 48px;
     }
 }
 
@@ -524,7 +542,7 @@ body {
     text-align: center;
 }
 
-@media (min-width: 1200px){ 
+@media (min-width: 320px){ 
     .title-h2 {
         margin-bottom: 72px;
     }
@@ -970,7 +988,7 @@ body {
     color: var(--priority-bgr-color);
 }
 
-input[type="email"] {
+input[name="email"] {
     color: var(--priority-text-color);
 }
 
@@ -1037,7 +1055,9 @@ input[type="email"] {
 
 .modal {
     position: relative;
-    max-width: 408px;
+    width: 408px;
+    max-width: 95vw;
+    max-height: 95vh;
     background-color: var(--priority-text-color);
     padding: 74px 24px 24px;
 }
